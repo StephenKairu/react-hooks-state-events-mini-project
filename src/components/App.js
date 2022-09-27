@@ -19,14 +19,14 @@ function App() {
     setTasks(newTasks);
   };
 
-  function handleDelete(id) {
-    setTasks((tasks) => {
-      return tasks.filter((task, index) => index !== id)
-    })
-  }
-
   function addNewTask(task) {
     setTasks((tasks) => [...tasks, task])
+  }
+
+  function handleDelete(id) {
+    setTasks((tasks) => {
+      return tasks.filter((index) => index !== id)
+    })
   }
 
   return (

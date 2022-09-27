@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function NewTaskForm({ onTaskFormSubmit, categories }) {
   const [text, setText] = useState("");
-  const [category, setCategory] = useState("Code");
+  const [category, setCategory] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
